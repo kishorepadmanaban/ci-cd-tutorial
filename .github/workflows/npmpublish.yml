@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: 12
       - run: rm -f package-lock.json    
-      - run: npm install
+      - run: npm ci
       - run: CI=true npm test
 
   publish-npm:
